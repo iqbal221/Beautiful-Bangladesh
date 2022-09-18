@@ -1,38 +1,314 @@
-.App {
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&display=swap');
+
+html{
+  width:100%;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #E7F2F8;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Droid Serif', serif;
+}
+
+hr{
+  height:20px;
+}
+
+/* Header */
+.logo{
+  width:27px;
+  height:27px;
+  margin-right:5px;
+}
+
+img .logo:hover{
+  color:#FFCC07;
+}
+
+.header-image{
+  background-image: url('./components/image/travelling1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height:250px;
+  opacity: 0.2;
+  
+}
+
+.contact{
+  height:40px;
+  font-size:12px;
+  cursor:pointer;
+}
+
+.email{
+  transition: 0.2s;
+  color:#777777;
+}
+
+.email:hover{
+  color:tomato;
+}
+
+.phone{
+  transition: 0.2s;
+  color:#777777;
+}
+
+.phone:hover{
+  color:tomato;
+}
+
+.contact-us{
+  transition: 0.2s;
+  color:#777777;
+  text-decoration: none;
+  font-size:13px;
+}
+
+.contact-us:hover{
+  color:tomato;
+}
+
+/* Navbar */
+
+.nav-item{
+  font-size: 18px;
+}
+
+.dropdown-menu li{
+  border-bottom:0.5px solid white;
+  padding: 5px 0;
+}
+
+.dropdown-menu li:last-child{
+  border-bottom:none;
+}
+
+
+/* Home */
+.carousel-item img{
+  height:600px;
+  width:100%;
+}
+
+.aboutBangladesh p {
+  text-align:justify;
+  font-size: 20px;
+  color:#a7a3a3;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.card{
+  height: 350px;
+}
+
+.TravelCard{
+  height:450px;
+  text-align: justify;
+  box-shadow: 0px 2px 4px 0px rgb(0,0,0,0.2) , 0px 6px 20px 0px rgb(0,0,0,0.19) ;
+  cursor:pointer;
+}
+
+.TravelCard p{
+  font-weight: 500;
+}
+
+.TravelCard img{
+  height:250px;
+}
+
+
+.NatureCard{
+  height:250px;
+  cursor:pointer;
+  transition: .5s;
+}
+
+.NatureCard img{
+  height:190px;
+}
+
+.NatureCard:hover{
+  box-shadow: 0px 2px 4px 0px rgb(0,0,0,0.3);
+}
+
+/* coxs bazar */
+.coxsBazarCard img{
+  width:100%;
+  height:360px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: .5s;
+}
+
+.coxsBazarCard img:hover{
+  box-shadow: 0px 4px 8px 0px rgb(0,0,0,0.5);
+}
+
+.coxsBazarCard p{
+  text-align: justify;
+  color:#777777;
+}
+
+.coxsBazarCard h3{
+  cursor:pointer;
+}
+
+
+/* Rangamati */
+.rangamatiCard img{
+  width:100%;
+  height:360px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: .5s;
+}
+
+.rangamatiCard img:hover{
+  box-shadow: 0px 4px 8px 0px rgb(0,0,0,0.5);
+}
+
+.rangamatiCard p{
+  text-align: justify;
+  color:#777777;
+}
+
+.rangamatiCard h3{
+  cursor:pointer;
+}
+
+/* sylhet */
+.sylhetCard img{
+  width:100%;
+  height:360px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: .5s;
+}
+
+.sylhetCard img:hover{
+  box-shadow: 0px 4px 8px 0px rgb(0,0,0,0.5);
+}
+
+.sylhetCard p{
+  text-align: justify;
+  color:#777777;
+}
+
+.sylhetCard h3{
+  cursor:pointer;
+}
+
+/* Dhaka */
+.dhakaCard img{
+  width:100%;
+  height:360px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: .5s;
+}
+
+.dhakaCard img:hover{
+  box-shadow: 0px 4px 8px 0px rgb(0,0,0,0.5);
+}
+
+.dhakaCard p{
+  text-align: justify;
+  color:#777777;
+}
+
+.dhakaCard h3{
+  cursor:pointer;
+}
+
+/* Contact */
+
+.ContactCard{
+  width:380px;
+  height:400px;
   text-align: center;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2) , 0px 6px 20px 0px rgb(0,0,0,0.19)  ;
+  cursor:pointer;
+  margin:auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.contact-btn {
+  width:100px;
+  border-radius: 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.contact-btn:hover{
+  background-color: transparent;
+  color:black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-control{
+  border:3px solid black;
+}
+
+
+/* footer */
+
+.footer{
+  background:#203040;
+  color:#ffffff;
+  padding:25px;
+}
+
+.footer h4{
+ margin: 25px 0;
+}
+
+.about p{
+  text-align: justify;
+  cursor: pointer;
+}
+
+.menu{
+  padding: left 200px;
+  cursor:pointer;
+}
+
+.social-icon{
+  border: 1px solid white;
+  width:25px;
+  height:25px;
+  padding:5px;
+  border-radius: 50%;
+  background-color:white;
+  color:#203040;
+  transition:0.3s;
+}
+
+.social-icon:hover{
+  background-color: rgb(99, 99, 102);
+  border: 1px solid rgb(99, 99, 102);
+  color:white;
+}
+
+.copyright{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 14px;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+/* common */
+
+
+/* Header */
+
+/* Coxs Bazar */
+
